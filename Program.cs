@@ -108,12 +108,12 @@
 
 // Console.WriteLine($"Сумма чисел не кратных трём: {sum}");
 
-int[] numberList = Enumerable.Range(1, 100).ToArray();
-foreach (int number in numberList) {
-    if (number % 2 == 0 && number % 3 == 0)
-    
-        {
-        Console.WriteLine($"Первое число, удовлетворяющее условию: {number}");
-        break;
-        }
-    }
+// int[] numberList = Enumerable.Range(1, 100).ToArray();
+// foreach (int number in numberList) {
+//     if (number % 2 == 0 && number % 3 == 0)
+
+//         {
+//         Console.WriteLine($"Первое число, удовлетворяющее условию: {number}");
+//         break;
+//         }
+//     }
