@@ -12,29 +12,43 @@
 // }
 // Console.WriteLine(found ? "Студент найден" : "Студент не найден");
 
-int variant = 12;
-bool isPrime = true;
-bool isVariant = false;
-if (variant == 1)
-{
-    isVariant = true;
-}
-else
+// 
 
-    for (int divisor = 2; divisor < variant; divisor++)
-    {
-        if (variant % divisor == 0)
-        {
-            isPrime = false;
-            break;
-        }
-    }
+// int[] pointsPerLab = { 8, -1, 10, 9, -1, 7 };
+// int sum = 0;
+// int count = 0;
 
-if (isVariant == false)
-{
-    Console.WriteLine(isPrime ? "Номер варианта простой" : "Номер варианта составной");
-}
-else
-{
-    Console.WriteLine("Введённый вариант не является ни простым ни составным, введите другое число");
-}
+// foreach (int points in pointsPerLab)
+// {
+//     if (points < 0)
+//     {
+//         continue;
+//     }
+//     sum += points;
+//     if (points >= 0)
+//     {
+//         count++;
+//     }
+// }
+
+// Console.WriteLine($"Сумма баллов за сданные работы: {sum}");
+// Console.WriteLine($"Количество сданных работ: {count}");
+
+// int[] groupIds = { 101, 104, 107, 104, 110 };
+// bool hasDuplicates = false;
+
+// for (int i = 0; i < groupIds.Length; i++)
+// {
+//     for (int j = i + 1; j < groupIds.Length; j++)
+//     {
+//         if (groupIds[i] == groupIds[j])
+//         {
+//             hasDuplicates = true;
+//             Console.WriteLine($"Первая совпавшая пара: {groupIds[i]} и {groupIds[j]}");
+//             break;
+//         }
+//     }
+// }
+
+// Console.WriteLine(hasDuplicates ? "Есть повторяющиеся номера" : "Все номера уникальны");
+
