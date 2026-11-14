@@ -117,3 +117,38 @@
 //         break;
 //         }
 //     }
+
+int[] numbers = { 4, 2, 7, 11, 15, 3 };
+        int target = 9;
+
+        bool found = false;
+        int index1 = -1;
+        int index2 = -1;
+
+        for (int i = 0; i < numbers.Length; i++)
+        {
+
+            for (int j = i + 1; j < numbers.Length; j++)
+            {
+                if (numbers[i] + numbers[j] == target)
+                {
+                    index1 = i;
+                    index2 = j;
+                    found = true; 
+                    break;        
+                }
+            }
+            if (found)
+            {
+                break;
+            }
+        }
+
+        if (found)
+        {
+            Console.WriteLine($"Индексы первой пары: {index1}, {index2} (значения: {numbers[index1]} и {numbers[index2]})");
+        }
+        else
+        {
+            Console.WriteLine("Пара не найдена");
+        }
